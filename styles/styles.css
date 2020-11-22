@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
 
-/* font-family: 'Exo 2', sans-serif; */
-
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT/FuturaPT-Medium.eot");
@@ -496,7 +494,6 @@ footer {
   -webkit-column-count: 2; /* Safari and Chrome */
   column-count: 2;
   list-style-type: none;
-  /* height: 168px; */
   width: 100%;
 }
 .list-services li {
