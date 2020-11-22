@@ -556,6 +556,7 @@ footer {
   }
   .wrap {
     display: block;
+    padding: 0 4%;
   }
   .social {
     padding-top: 50px;
@@ -593,7 +594,32 @@ footer {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 600px) {
+  .serv {
+    width: 300px;
+  }
+  .serv-info,
+  .serv-safety {
+    padding-right: 180px;
+    padding-left: 20px;
+  }
+  .serv-manager,
+  .serv-next {
+    padding-left: 180px;
+    padding-right: 20px;
+  }
+  .serv-info {
+    background-image: url(../image/info-small.png);
+  }
+  .serv-safety {
+    background-image: url(../image/safety-small.png);
+  }
+  .serv-manager {
+    background-image: url(../image/management-small.png);
+  }
+  .serv-next {
+    background-image: url(../image/next-small.png);
+  }
 }
 
 @media (max-width: 768px) {
@@ -618,6 +644,7 @@ footer {
   }
   .menu {
     width: 100vw;
+    height: 100vh;
   }
   .wrapper-services {
     margin-bottom: 60px;
@@ -636,7 +663,13 @@ footer {
     font-size: 10px;
   }
   header {
-    min-height: 500px;
+    min-height: 600px;
+  }
+  .btn-slaider {
+    margin-top: 10px;
+  }
+  .header-slider p {
+    padding-bottom: 0;
   }
   .header-slider_page {
     margin-top: 50vh;
@@ -650,6 +683,6 @@ footer {
   }
   .call-us {
     font-size: 14px;
-    padding: 13px 5px;
+    padding: 13px 10px;
   }
 }
