@@ -189,7 +189,7 @@ header {
   height: 800px;
   background-image: url(../image/header.png);
   background-size: cover;
-  background-position: 60% 50%;
+  background-position: 60% 100%;
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -559,6 +559,9 @@ footer {
   .about-us-text {
     margin-left: 5%;
   }
+  .about-us-text {
+    order: -1;
+  }
   .services {
     padding-right: 2%;
   }
@@ -589,6 +592,7 @@ footer {
   .serv {
     font-size: 22px;
   }
+
   .card-adv {
     font-size: 18px;
     line-height: 23px;
@@ -605,15 +609,24 @@ footer {
   h2 {
     font-size: 40px;
   }
+  header,
+  .header-slider {
+    height: 100vh;
+  }
   .serv {
     font-size: 20px;
   }
   .header-slider_page {
+    margin-top: 50vh;
     width: 80%;
   }
   .card-adv {
     flex: 1 1 320px;
     margin-left: 0;
+  }
+  .menu {
+    width: 100vw;
+    height: 100vh;
   }
 }
 
@@ -629,10 +642,6 @@ footer {
   }
   .call-us {
     font-size: 18px;
-  }
-  .menu {
-    width: 100vw;
-    height: 100vh;
   }
 }
 @media (max-width: 320px) {
