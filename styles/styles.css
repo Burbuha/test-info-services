@@ -591,34 +591,6 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  .serv {
-    width: 300px;
-  }
-  .serv-info,
-  .serv-safety {
-    padding-right: 180px;
-    padding-left: 20px;
-  }
-  .serv-manager,
-  .serv-next {
-    padding-left: 180px;
-    padding-right: 20px;
-  }
-  .serv-info {
-    background-image: url(../image/info-small.png);
-  }
-  .serv-safety {
-    background-image: url(../image/safety-small.png);
-  }
-  .serv-manager {
-    background-image: url(../image/management-small.png);
-  }
-  .serv-next {
-    background-image: url(../image/next-small.png);
-  }
-}
-
 @media (max-width: 768px) {
   html {
     font-size: 12px;
@@ -644,7 +616,7 @@ footer {
     height: 100vh;
   }
   .wrapper-services {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .wrapper-services > * {
     flex: 1 1 90%;
@@ -652,6 +624,31 @@ footer {
   }
   .serv-vector {
     width: 50%;
+  }
+  .serv {
+    width: 300px;
+  }
+  .serv-info,
+  .serv-safety {
+    padding-right: 180px;
+    padding-left: 20px;
+  }
+  .serv-manager,
+  .serv-next {
+    padding-left: 180px;
+    padding-right: 20px;
+  }
+  .serv-info {
+    background-image: url(../image/info-small.png);
+  }
+  .serv-safety {
+    background-image: url(../image/safety-small.png);
+  }
+  .serv-manager {
+    background-image: url(../image/management-small.png);
+  }
+  .serv-next {
+    background-image: url(../image/next-small.png);
   }
 }
 
@@ -681,5 +678,9 @@ footer {
   .call-us {
     font-size: 14px;
     padding: 13px 10px;
+  }
+  .location {
+    padding: 50px 20px;
+    height: auto;
   }
 }
