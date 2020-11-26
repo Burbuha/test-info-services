@@ -100,7 +100,7 @@ header {
   /* min-height: 800px; */
   width: 100%;
 }
-.header-triangle {
+/* .header-triangle {
   position: absolute;
   top: -20px;
   left: 0;
@@ -113,7 +113,7 @@ header {
   top: 348px;
   height: 40%;
   z-index: 10;
-}
+} */
 .nav {
   position: relative;
 }
@@ -221,7 +221,10 @@ header {
   object-position: 40% 100%;
 }
 .carousel-inner .first-img {
-  object-position: 70% 100%;
+  object-position: 60% 100%;
+}
+.carousel-inner .second-img {
+  object-position: 50% 100%;
 }
 .slide_text {
   text-align: left;
@@ -317,12 +320,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   cursor: pointer;
-  transition: 1s;
-}
-.serv-text:hover {
-  width: 100%;
-  margin: 0;
-  border-radius: 10px;
+  transition: 1s ease;
 }
 .serv-text a {
   display: block;
@@ -463,6 +461,12 @@ header {
 }
 .serv-vector-left {
   left: 0;
+}
+.serv-text:hover {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 10px;
 }
 
 /*------Advantages------*/
@@ -754,21 +758,14 @@ footer {
   .header-slider_page {
     width: 70%;
   }
-  .serv-info,
-  .serv-safety {
-    padding-right: 330px;
-    padding-left: 20px;
-  }
-  .serv-manager,
-  .serv-next {
-    padding-left: 340px;
-    padding-right: 20px;
-  }
 }
 
 @media (max-width: 768px) {
   .wrapper {
     max-width: 768px;
+  }
+  .adventages {
+    margin: 60px 0;
   }
   html {
     font-size: 12px;
@@ -792,6 +789,8 @@ footer {
   .menu {
     width: 100vw;
     height: 100vh;
+    font-size: 22px;
+    font-weight: bold;
   }
   .wrapper-services {
     margin-bottom: 30px;
@@ -806,15 +805,8 @@ footer {
   .serv {
     width: 300px;
   }
-  .serv-info,
-  .serv-safety {
-    padding-right: 180px;
-    padding-left: 20px;
-  }
-  .serv-manager,
-  .serv-next {
-    padding-left: 180px;
-    padding-right: 20px;
+  .serv-title {
+    padding: 0 10px;
   }
 }
 
