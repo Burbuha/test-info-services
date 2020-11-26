@@ -14,8 +14,8 @@ menu.addEventListener("click", (event) => {
 });
 
 //to-top
-let toTop = document.getElementById("to-top");
-let home = document.getElementById("home");
+const toTop = document.getElementById("to-top");
+const home = document.getElementById("home");
 window.onscroll = function () {
   scrollFunction();
 };
