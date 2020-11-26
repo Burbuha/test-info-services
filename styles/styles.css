@@ -89,9 +89,6 @@ h2 {
 main {
   grid-area: main;
 }
-header {
-  position: relative;
-}
 
 /*-----Header, menu------*/
 header {
@@ -204,6 +201,9 @@ header {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
+.menu a:hover {
+  text-decoration: underline;
+}
 .menu-active {
   display: flex;
   flex-direction: column;
@@ -242,13 +242,12 @@ header {
   font-size: 1.75rem;
   color: #454547;
 }
-/* Кнопки вперед и назад */
 .btn-slider {
   position: absolute;
   width: 120px;
   bottom: 10vh;
   left: 20px;
-  z-index: 20;
+  z-index: 18;
 }
 .prev,
 .next {
@@ -688,12 +687,15 @@ footer {
   .about-us-img {
     width: 100%;
   }
+  .about-us-img {
+    text-align: center;
+  }
   .about-us {
     flex: 1 1 100%;
     flex-direction: column-reverse;
     justify-content: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    align-items: center;
+    margin: 100px auto;
   }
 }
 @media (max-width: 1200px) {
@@ -703,14 +705,6 @@ footer {
   }
   .btn-slaider {
     left: 5%;
-  }
-  .header-slider_page,
-  .about-us-text {
-    margin-left: 5%;
-  }
-
-  .services {
-    padding-right: 2%;
   }
   .wrap {
     display: block;
@@ -722,9 +716,6 @@ footer {
   }
   .list-services {
     width: auto;
-  }
-  .header-slider_page {
-    width: 55%;
   }
   .btn-slaider {
     margin-top: 35px;
@@ -755,9 +746,6 @@ footer {
   .card-adv {
     line-height: 23px;
   }
-  .header-slider_page {
-    width: 70%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -770,17 +758,12 @@ footer {
   html {
     font-size: 12px;
   }
-  header,
-  .header-slider {
+  header {
     height: 100vh;
   }
   .about-us {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  .header-slider_page {
-    margin-top: 50vh;
-    width: 70%;
   }
   .card-adv {
     flex: 1 1 90%;
@@ -822,13 +805,6 @@ footer {
   }
   .btn-slaider {
     margin-top: 10px;
-  }
-  .header-slider p {
-    padding-bottom: 0;
-  }
-  .header-slider_page {
-    margin-top: 50vh;
-    width: 90%;
   }
   .card-adv_img img {
     width: 50px;
