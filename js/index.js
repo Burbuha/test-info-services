@@ -1,11 +1,14 @@
 //menu
-var menuBtn = document.querySelector(".menu-btn");
-var menu = document.querySelector(".menu");
-menuBtn.addEventListener("click", () => {
+const menuButton = document.querySelector(".menu-button");
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+menuButton.addEventListener("click", (event) => {
+  event.preventDefault();
   menuBtn.classList.toggle("menu-btn-active");
   menu.classList.toggle("menu-active");
 });
 menu.addEventListener("click", (event) => {
+  event.preventDefault();
   menuBtn.classList.toggle("menu-btn-active");
   menu.classList.toggle("menu-active");
 });
