@@ -7,8 +7,7 @@ menuButton.addEventListener("click", (event) => {
   menuBtn.classList.toggle("menu-btn-active");
   menu.classList.toggle("menu-active");
 });
-menu.addEventListener("click", (event) => {
-  event.preventDefault();
+menu.addEventListener("click", () => {
   menuBtn.classList.toggle("menu-btn-active");
   menu.classList.toggle("menu-active");
 });
